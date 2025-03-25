@@ -1,9 +1,9 @@
 ---
 title: 基于 Hexo 和 GitHub Pages 搭建博客并实现思源笔记一键发布
-date: '2025-03-17 14:03:11'
-updated: '2025-03-18 13:26:30'
+date: '2025-03-18 15:37:43'
+updated: '2025-03-18 15:57:43'
 permalink: >-
-  /post/build-a-blog-based-on-hexo-and-github-pages-and-realize-oneclick-release-of-siyuan-notes-zuh4x6.html
+  /post/build-a-blog-based-on-hexo-and-github-pages-and-realize-oneclick-release-of-siyuan-notes-z1ji8uo.html
 comments: true
 toc: true
 ---
@@ -12,16 +12,16 @@ toc: true
 
 # 基于 Hexo 和 GitHub Pages 搭建博客并实现思源笔记一键发布
 
-## 一<span data-type="text" style="font-size: 24px;">、</span>新建 [Github](https://so.csdn.net/so/search?q=Github&spm=1001.2101.3001.7020) 仓库
+## 一、新建 [Github](https://so.csdn.net/so/search?q=Github&spm=1001.2101.3001.7020) 仓库
 
 1. 创建一个 github 仓库,点击 `Create repository`​
 2. 需要特别注意的是仓库名字是 `Github用户名.github.io `​ 这个格式
 
-![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20100348.png)
+![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20100348-20250318144133-d5j5osy.png)
 
 3. 注意记得勾选 `Add a README file`​，为了方便后续查看 GitHub Pages 的域名和部署分支，然后点击创建
 4. 创建后，点击 `setting`​
-5. 查看这个分支，这里为 `main`​ 分支，后面写[配置文件](https://so.csdn.net/so/search?q=%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6&spm=1001.2101.3001.7020)需要用到，然后 `https://xingzhuz.github.io`​ 就是后续我们访问的域名，目前也可以访问，只是只能显示出你的仓库名，即我的 `xingzhuz.github.io`​​![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20100533.png)![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20100550.png)
+5. 查看这个分支，这里为 `main`​ 分支，后面写[配置文件](https://so.csdn.net/so/search?q=%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6&spm=1001.2101.3001.7020)需要用到，然后 `https://dukezhu513.github.io`​ 就是后续我们访问的域名，目前也可以访问，只是只能显示出你的仓库名，即我的 `dukezhu513.github.io`![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20100533-20250318144133-6nm63zh.png)
 
 ## 二、安装Node.js、Git和Hexo
 
@@ -40,9 +40,7 @@ git version 2.39.0.windows.2
 ```
 
 4. ​`git`​ 还需要配置相应的环境， 实现 `git`​ 和 `github`​ 之间的交互，如使用 `git`​ 拉取 `github`​ 项目、配置相应的密钥等等，推荐一个配置学习的链接：[使用git拉取github项目-CSDN博客](https://blog.csdn.net/qq_59509843/article/details/139632151)
-
 5. 新建一个文件夹用来存博客，如我创建的仓库名和`github`​仓库名一致，完整路径就是 `D:\dukezhu513.github.io`​ ，建议路径中不要包含中文字符
-
 6. 创建完后，进入这个创建的文件夹，然后鼠标右击，点击 `Open Git Bash here`​，进入一个命令行界面，然后输入 `npm install -g hexo-cli`​ ，将 Hexo 命令行工具安装到系统的全局环境中
 
 ```bash
@@ -67,7 +65,7 @@ $ npm install
 hexo server
 ```
 
- 执行完毕后，打开本地浏览器，访问 `http://localhost:4000/`​，出现以下界面，说明本地部署成功了
+执行完毕后，打开本地浏览器，访问 `http://localhost:4000/`​，出现以下界面，说明本地部署成功了
 
 4. 继续在 Git Bash 中执行指令 `hexo server`​
 
@@ -75,9 +73,9 @@ hexo server
 $ hexo server
 ```
 
- 执行完毕后，打开本地浏览器，访问 `http://localhost:4000/`​，出现以下界面，说明本地部署成功了
+执行完毕后，打开本地浏览器，访问 `http://localhost:4000/`​，出现以下界面，说明本地部署成功了
 
- ![在这里插入图片描述](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/5c80c7a7d7874511a18d3a3b722274c2-20250317140310-yudc3wm.png)
+![在这里插入图片描述](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-5c80c7a7d7874511a18d3a3b722274c2-20250317140310-yudc3wm.png)
 
 ## 四 、将本地博客部署到 Github 上
 
@@ -93,15 +91,15 @@ deploy:
   branch: main
 ```
 
- 这个代码是指，使用 `git`​ 方式部署，`repo`​ 的选择按照如下图片示例
+这个代码是指，使用 `git`​ 方式部署，`repo`​ 的选择按照如下图片示例
 
-![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20102242.png)
+‍
 
- 而那个 `branch`​ 填写的就是分支，就是上述第三步建仓库时候，`pages`​ 部分查看的分支，需要一致
+而那个 `branch`​ 填写的就是分支，就是上述第三步建仓库时候，`pages`​ 部分查看的分支，需要一致
 
- 上面这种图片是我已经部署上去了，所以后面会看到有文件，而没有部署之前，即你们现在的界面，就是空的，只有一个 `READMD.md`​ 文件
+上面这种图片是我已经部署上去了，所以后面会看到有文件，而没有部署之前，即你们现在的界面，就是空的，只有一个 `READMD.md`​ 文件
 
-3. 在当前博客目录安装 git 插件，即 `C:\MyBlog\myblogs`​，使用 `git bash`​ 执行这个命令
+3. 在当前博客目录安装 git 插件，即 `D:\DukeZhu513.github.io\myblogs`​，使用 `git bash`​ 执行这个命令
 
 ```bash
 npm install hexo-deployer-git --save
@@ -115,7 +113,7 @@ hexo generate   # 重新生成静态文件
 hexo deploy     # hexo deploy
 ```
 
- 如果设置了密钥，输入密钥即可，若最终出现 `Deploy done`​ 就说明部署成功了，此时就可以使用域名访问了，`https://用户名.github.io`​ ，如果界面没改变，等个一两分钟即可
+如果设置了密钥，输入密钥即可，若最终出现 `Deploy done`​ 就说明部署成功了，此时就可以使用域名访问了，`https://用户名.github.io`​ ，如果界面没改变，等个一两分钟即可
 
 5. 如果最后一步报错:
 
@@ -123,9 +121,9 @@ hexo deploy     # hexo deploy
 Please make sure you have the correct access rights and the repository exists. 
 FATAL Something's wrong. Maybe you can find the solution here:https://hexo.io/docs/troubleshooting.html 
 Error: Spawn failed 
-    at ChildProcess.<anonymous> (C:\MyBlog\myblogs\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:51:21) 
+    at ChildProcess.<anonymous> (D:\DukeZhu513.github.io\myblogs\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:51:21) 
     at ChildProcess.emit (node:events:519:28) 
-    at cp.emit (C:\MyBlog\myblogs\node_modules\cross-spawn\lib\enoent.js:34:29) 
+    at cp.emit (D:\DukeZhu513.github.io\myblogs\node_modules\cross-spawn\lib\enoent.js:34:29) 
     at ChildProcess._handle.onexit (node:internal/child_process:294:12) 
 ```
 
@@ -163,7 +161,7 @@ Host github.com
 ```bash
 ssh -T git@github.com
 # 我的成功示例 
-# Hi xingzhuz! You've successfully authenticated, but GitHub does not provide shell access.
+# Hi dukezhu513! You've successfully authenticated, but GitHub does not provide shell access.
 
 ping github.com
 # 显示一系列数字，即 IP
@@ -177,15 +175,14 @@ hexo deploy     # hexo deploy
 
 ## 五 、基本使用
 
-1. 进入博客主目录，然后逐步进入 `source\_posts`​，我的就是 ` C:\dukezhu513.github.io\myblogs\source\_posts`​
+1. 进入博客主目录，然后逐步进入 `source\_posts`​，我的就是 ` D:\dukezhu513.github.io\myblogs\source\_posts`​
 2. 然后新建一个 `命名.md`​ 文件，用记事本或者 Vscode 打开，如果有支持 markdown 格式的笔记软件的话，可以对应打开
 
-![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20103256.png)
+![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20103256-20250318144134-pxbld0v.png)
 
 3. 然后按照这样的格式，填写文章标题、发布日期、标签、种类、关键词等等，标题和时间是必需的，其余看自己需求，标签像我这样写就是同级标签
 
- ![在这里插入图片描述](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/d645149abd3f408b83de91fdbae5e5d5-20250317140311-gsh04yl.png)
-
+![在这里插入图片描述](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-d645149abd3f408b83de91fdbae5e5d5-20250317140311-gsh04yl.png)  
 4. 这个使用 `---`​ 包括起来的内容称之为 `Front-matter`​，即前置信息，用于给 Hexo 渲染该 md 文档，除了这三项，还有很多的配置项可以自己添加：
 
 |配置项|意义|
@@ -207,14 +204,13 @@ hexo deploy     # hexo deploy
 2. 在左上角的发布工具进行发布设置
 3. 鉴权Token需要到`github`​进行申请，发布工具为Markdown，图床选择PicGO
 
-![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20104140.png)  
-​![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20104150.png) ![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20104951.png)
+![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20104140-20250318144134-pf7nu7q.png)  
+​![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20104951-20250318144134-kr5f067.png)
 
-  注意：有效期请设置永久有效，权限最低要给`workflow 更新 GitHub Actions 工作流程`​
+注意：有效期请设置永久有效，权限最低要给`workflow 更新 GitHub Actions 工作流程`​
 
-4. 在进行常规发布前，先把`gitHub`​仓库的原始文件夹全部清空，不能有`.html`​文件![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20110108.png)
+4. 在进行常规发布前，先把`gitHub`​仓库的原始文件夹全部清空，不能有`.html`​文件![](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-18%20110108-20250318144134-1g8zitf.png)
 5. [https://hexo.io/zh-cn/docs/github-pages](https://hexo.io/zh-cn/docs/github-pages)参考这个来进行 [GitHub Actions](https://docs.github.com/zh/actions) 部署 GitHub Pages，同时要在仓库page中`source`​更改为`Github Actions`​
-
 6. 进行常规发布，看看是否正常
 
 ## 七、搭建图床
@@ -225,39 +221,39 @@ hexo deploy     # hexo deploy
 
     * 登录 [阿里云官网](https://account.aliyun.com/login/login.htm?oauth_callback=https://oss.console.aliyun.com/index)，可以用支付宝扫码登录
     * 登录之后创建 Bucket  
-      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-oZ0CBrT-20250318111023-6a69t04.png)
+      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-oZ0CBrT-20250318111023-6a69t04.png)
     * 「Bucket 名称」任取 (取完之后**复制**下来，等下要用)，地域选择离你最近的那个，其他的设置保持默认。  
       （PS：如果想使用香港免费额度的话，就是下图的“地域”选取香港即可，其余的步骤都一样）  
-      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-UQrqmah-20250318111023-m8es8dy.png)
+      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-UQrqmah-20250318111023-m8es8dy.png)
     * 创建完成后会跳转到如下界面，**复制**下「外网访问-Endpoint（地域节点）」  
-      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-zdKuxKj-20250318111023-fovbpvq.png)
+      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-zdKuxKj-20250318111023-fovbpvq.png)
 
     ### 2.创建子账户
 
     * 这时候我们只有主账户，权限很高，风险也很大。同步不需要这么大的权限，所以接下来创建一个子账户接管部分权限。鼠标移动到右上角的头像位置，点击 「AccessKey 管理」  
-      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-PjGH7yf-20250318111023-400s68m.png)
+      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-PjGH7yf-20250318111023-400s68m.png)
     * 接下来会弹出一个安全提示的窗口，点击「开始使用子用户 AccessKey」
 
-    ![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-u0zGWCs-20250318111023-uh9ryzs.png)
+    ![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-u0zGWCs-20250318111023-uh9ryzs.png)
 
     * 然后「创建用户」  
-      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-szohrIY-20250318111023-2hbyr9u.png)
+      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-szohrIY-20250318111023-2hbyr9u.png)
     * 「登录名称」和「显示名称」任取，但是注意：「**Open API 调用访问**」要勾选上  
-      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-0CnMgRd-20250318111023-gkyaues.png)
+      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-0CnMgRd-20250318111023-gkyaues.png)
     * 点击确定之后，会显示  AccessKey ID 和 AccessKey Secret 的信息，两个都**复制**一下
 
       * 注意：AccessKey Secret 信息**只会显示这一次**，请妥善保管
     * 这里之前漏掉了一步，评论区有朋友提到了，感谢Fix。
     * 在创建完子账户之后，需要给子账户授予OSS权限
-    * 鼠标移动到右上角头像处，点击「访问控制」-「用户」-「添加权限」![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-Voizihy-20250318111023-1f4lfoe.png)
-    * 选中AliyunOSSFullAccess，然后确定即可![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-P4oZQOm-20250318111023-xj7cvv5.png)
+    * 鼠标移动到右上角头像处，点击「访问控制」-「用户」-「添加权限」![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-Voizihy-20250318111023-1f4lfoe.png)
+    * 选中AliyunOSSFullAccess，然后确定即可![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-P4oZQOm-20250318111023-xj7cvv5.png)
 
     #### 3.给子账户添加Bucket权限
 
     * 返回初始的 Bucket 界面，在「权限控制」-「Bucket 授权策略」中「新增授权」  
-      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-BxQGW9E-20250318111023-jvz2wpo.png)
+      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-BxQGW9E-20250318111023-jvz2wpo.png)
     * 在授权界面，「授权资源」-「整个 Bucket」；「授权用户」-「子账号」-选择刚刚创建的子账号；「授权操作」-「完全控制」  
-      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/image-QhLtzXZ-20250318111023-r0ew9hi.png)
+      ​![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-QhLtzXZ-20250318111023-r0ew9hi.png)
 
     ##### 4.开通套餐包
 
@@ -277,10 +273,8 @@ hexo deploy     # hexo deploy
       * TLS Verify 保持默认的 Verify
 
     ## 特别要点：在阿里云的控制台选择Bucket，修改Bucket的读写设置至少为公共读
-2. 进行图床配置
-
-    请参考此篇文章[思源笔记配合插件实现HEXO文章快速发布 - Shepherd010](https://shepherd010.github.io/post/siyuan-notes-and-plugin-realize-the-rapid-release-of-hexo-articles-za8u7r.html)
-
+2. 进行图床配置  
+    请参考此篇文章[思源笔记配合插件实现HEXO文章快速发布 - Shepherd010](https://shepherd010.github.io/post/siyuan-notes-and-plugin-realize-the-rapid-release-of-hexo-articles-za8u7r.html)  
     ps.插件PicGo图床的设置一定要用PicGo（app），内置的PicGo无法正常使用
 3. 进行常规发布进行测试
 
@@ -291,17 +285,5 @@ hexo deploy     # hexo deploy
 ## 总结
 
 通过本文的步骤，可以轻松搭建一个基于 Hexo 和 GitHub Pages 的个人博客，并结合思源笔记实现“一键发布”功能。同时，通过配置阿里云 OSS 和 PicGo 图床，解决了图片上传和管理的难题。这套方案不仅简单易用，而且完全免费，非常适合个人博客的搭建和维护。
-
-‍
-
-‍
-
-‍
-
-‍
-
-‍
-
-‍
 
 ‍
