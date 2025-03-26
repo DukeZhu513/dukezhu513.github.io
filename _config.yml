@@ -107,6 +107,3 @@ theme: fluid
  # repo: git@github.com:DukeZhu513/DukeZhu513-dukezhu513.github.io.git
  # branch: main
 
-markdown:
-  plugins:
-    - "@traptitech/markdown-it-katex"
