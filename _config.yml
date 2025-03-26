@@ -106,11 +106,3 @@ theme: fluid
  # type: git
  # repo: git@github.com:DukeZhu513/DukeZhu513-dukezhu513.github.io.git
  # branch: main
-
-math:
-  engine: 'katex'  # 或者 'mathjax'
-  katex:
-    css: true      # 是否加载 KaTeX 的 CSS 样式
-    js: true       # 是否加载 KaTeX 的 JavaScript
-  mathjax:
-    cdn: true      # 是否使用 MathJax 的 CDN
