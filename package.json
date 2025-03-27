@@ -27,7 +27,6 @@
     "hexo-theme-fluid": "^1.9.8",
     "hexo-theme-landscape": "^1.0.0",
     "highlight.js": "^11.11.1",
-    "katex": "^0.16.21",
     "markdown-it-katex": "^2.0.3"
   }
 }
