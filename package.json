@@ -12,7 +12,6 @@
     "version": "7.3.0"
   },
   "dependencies": {
-    "@andatoshiki/markdown-it-katex": "^0.0.3",
     "@upupming/hexo-renderer-markdown-it-plus": "^2.0.2",
     "hexo": "^7.3.0",
     "hexo-deployer-git": "^4.0.0",

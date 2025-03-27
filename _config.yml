@@ -107,20 +107,20 @@ theme: fluid
  # repo: git@github.com:DukeZhu513/DukeZhu513-dukezhu513.github.io.git
  # branch: main
 
-# 替换默认的 Markdown 渲染器
+# 数学公式专用配置段
 markdown:
   render:
-    html: true  # 允许 HTML 标签
-    xhtmlOut: false
-    breaks: true
-    linkify: true
+    html: true      # 允许HTML标签
+    xhtmlOut: true  # 必须开启以支持换行
+    breaks: true    # 自动换行转换
+    linkify: true   # 自动识别链接
     typographer: true
     quotes: '“”‘’'
   plugins:
-    - markdown-it-katex  # 启用 KaTeX 支持
+    - markdown-it-katex  # 唯一数学渲染插件
 
-# 添加 KaTeX 的 CSS/JS 资源（全局加载）
+# CDN资源加载（版本锁定）
 katex:
-  enable: true
   css: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
   js: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
+
