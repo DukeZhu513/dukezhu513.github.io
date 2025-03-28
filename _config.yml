@@ -108,19 +108,19 @@ theme: fluid
  # branch: main
 
 # 数学公式专用配置段
-markdown:
-  render:
-    html: true      # 允许HTML标签
-    xhtmlOut: true  # 必须开启以支持换行
-    breaks: true    # 自动换行转换
-    linkify: true   # 自动识别链接
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-katex  # 唯一数学渲染插件
+#markdown:
+ # render:
+  #  html: true      # 允许HTML标签
+  # xhtmlOut: true  # 必须开启以支持换行
+  #  breaks: true    # 自动换行转换
+  #  linkify: true   # 自动识别链接
+  #  typographer: true
+  #  quotes: '“”‘’'
+ # plugins:
+  #  - markdown-it-katex  # 唯一数学渲染插件
 
 # CDN资源加载（版本锁定）
-katex:
-  css: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
-  js: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
+#katex:
+  #css: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
+  #js: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
 
