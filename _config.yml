@@ -123,3 +123,9 @@ theme: fluid
 #katex:
   #css: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
   #js: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
+
+# 根据实际路径填写（注意转义反斜杠或使用正斜杠）
+pandoc:
+  args:
+    - "--citeproc"  # 替换原有的 --filter pandoc-citeproc
+    - "--mathjax"   # 保留其他必要参数（如数学公式支持）
