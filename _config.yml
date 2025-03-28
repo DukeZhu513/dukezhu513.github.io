@@ -124,3 +124,7 @@ theme: fluid
   #css: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
   #js: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
 
+pandoc:
+  pandoc_path: "C:/Program Files/Pandoc/pandoc.exe"  # Windows 示例
+  # 或 Linux/macOS 示例：
+  # pandoc_path: "/usr/local/bin/pandoc"
