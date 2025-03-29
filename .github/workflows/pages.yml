@@ -35,6 +35,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+        name: Install Pandoc
+        run: sudo apt-get install pandoc
   deploy:
     needs: build
     permissions:
@@ -48,3 +50,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+  
