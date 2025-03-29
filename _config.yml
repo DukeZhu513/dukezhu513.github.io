@@ -124,3 +124,4 @@ theme: fluid
   #css: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
   #js: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
 
+# 根据实际路径填写（注意转义反斜杠或使用正斜杠）
