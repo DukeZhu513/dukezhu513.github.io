@@ -55,6 +55,9 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
+markdown:
+  plugins:
+    - "@traptitech/markdown-it-katex"
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
