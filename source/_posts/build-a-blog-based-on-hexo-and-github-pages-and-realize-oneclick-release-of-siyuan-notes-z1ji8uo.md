@@ -3,6 +3,11 @@ title: 基于 Hexo 和 GitHub Pages 搭建博客并实现思源笔记一键发�
 date: '2025-03-18 15:37:43'
 categories:
   - 知识管理
+tags:
+  - Hexo
+  - Github
+  - 思源笔记
+
 updated: '2025-03-18 15:57:43'
 permalink: >-
   /post/build-a-blog-based-on-hexo-and-github-pages-and-realize-oneclick-release-of-siyuan-notes-z1ji8uo.html

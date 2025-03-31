@@ -3,6 +3,11 @@ title: 周学习总结（3月16日-22日）
 date: '2025-03-27 17:18:22'
 categories:
   - 学习笔记
+tags:
+  - 线性代数
+  - Python
+  - 算法
+  - 综述
 updated: '2025-03-27 17:19:30'
 permalink: /post/weekly-study-summary-march-1622-fyvfi.html
 comments: true
