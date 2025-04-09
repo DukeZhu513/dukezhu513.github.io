@@ -1,6 +1,12 @@
 ---
 title: 矩阵理论和编程实践
 date: '2025-04-07 12:00:33'
+categories:
+  - 学习笔记
+tags:
+  - 线性代数
+  - Python
+  - 机器学习基础
 updated: '2025-04-07 12:16:28'
 permalink: /post/matrix-theory-and-programming-practice-z1pgq8k.html
 comments: true
