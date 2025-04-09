@@ -1,14 +1,14 @@
 ---
 title: 矩阵理论和编程实践
-date: '2025-04-07 12:00:33'
+date: '2025-04-07 14:04:56'
 categories:
   - 学习笔记
 tags:
   - 线性代数
   - Python
   - 机器学习基础
-updated: '2025-04-07 12:16:28'
-permalink: /post/matrix-theory-and-programming-practice-z1pgq8k.html
+updated: '2025-04-07 14:08:34'
+permalink: /post/matrix-theory-and-programming-practice-p4f5e.html
 comments: true
 toc: true
 ---
@@ -37,7 +37,7 @@ $$
 
 **解：** 
 
-1. 先计算行列式$d$，并且判断是否$d \neq 0$​$ $：
+1. 先计算行列式$d$，并且判断是否$d \neq 0$​$ $
 
 $$
 {d}=\left | \begin{matrix}
@@ -57,7 +57,7 @@ $$
 9 \neq 0
 $$
 
-2. 计算$d_1、d_2、d_3$：
+2. 计算$d_1、d_2、d_3$
 
 $$
 {d_1}=\left | \begin{matrix}
@@ -104,7 +104,7 @@ $$
 27
 $$
 
-3. 得出线性方程的唯一解：$ $
+3. 得出线性方程的唯一解$ $
 
     唯一解为：$x_1 = \frac{d_1}d,x_2 = \frac{d_2}d,x_3 = \frac{d_3}d$
 
@@ -154,7 +154,7 @@ else:
 
 ## 问题二：**分块矩阵求逆**
 
-设$m+n$阶方阵$D$为
+设$m+n$阶方阵$D$为：
 
 $$
 {D}= \begin{pmatrix}
@@ -169,7 +169,7 @@ $$
 
 **解:** 
 
-1. 因为$A,B $均可逆，则$\begin{vmatrix} A \end{vmatrix} \neq 0, \begin{vmatrix} B \end{vmatrix} \neq 0$，又$\begin{vmatrix} D \end{vmatrix}= \begin{vmatrix} A \end{vmatrix} \cdot \begin{vmatrix} B \end{vmatrix} $，故$\begin{vmatrix} D \end{vmatrix} \neq 0$，$D$可逆.
+1. 因为$A,B $均可逆，则$\begin{vmatrix} A \end{vmatrix} \neq 0 $,$\begin{vmatrix} B \end{vmatrix} \neq 0 $,又$\begin{vmatrix} D \end{vmatrix}= \begin{vmatrix} A \end{vmatrix} \cdot \begin{vmatrix} B \end{vmatrix} $，故$\begin{vmatrix} D \end{vmatrix} \neq 0$，$D$可逆.$ $
 2. 设
 
 $$
@@ -228,7 +228,7 @@ A^{-1} & O \\
 \end{pmatrix}
 $$
 
-### Python求矩阵的逆：
+### Python求矩阵的逆
 
 ```python
 import numpy as np
@@ -311,19 +311,19 @@ rank = len(pivots)  # 主元列数即为秩
 ‍
 
 $$
-||{{x}}||_1=\sum_{i} |{x}_i|
+||x||_1=\sum_{i} |x_i|
 $$
 
 * $L^2$范数（欧氏距离）：几何长度和正交性（如主成分分析）
 
 $$
-||{{x}}||_2=(\sum_i {x}_i^2)^{1/2}\Leftrightarrow \sqrt{\sum_i {x}_i^2}
+||x||_2=(\sum_i x_i^2)^{1/2}\Leftrightarrow \sqrt{\sum_i x_i^2}
 $$
 
 * $L^∞$范数（最大值）：误差分析中的最坏情况评估
 
 $$
-\sum_i|{x}_i|^2
+\sum_i|x_i|^2
 $$
 
 #### 3. **矩阵范数**：
@@ -333,7 +333,7 @@ $$
 * Frobenius范数：矩阵元素的平方和开根号，用于低秩近
 
 $$
-||{{A}}||_F=\sqrt{\sum_{i,j}A^2_{i,j}}
+||A||_F=\sqrt{\sum_{i,j}A^2_{i,j}}
 $$
 
 ### <span data-type="text" style="font-size: 21px;"> </span>**应用**<span data-type="text" style="font-size: 21px;">：</span>
@@ -370,15 +370,13 @@ $$
 A=UDV^T
 $$
 
-‍
-
 其中：
 
 * **U矩阵**（左奇异矩阵）：由正交单位列向量组成，代表数据在行方向（如用户、文档）的潜在特征。
 * D**矩阵**（奇异值矩阵）：对角线上元素为奇异值，按从大到小排列，代表各个潜在特征的重要性强度。
 * **V矩阵**（右奇异矩阵）：由正交单位行向量组成，代表数据在列方向（如物品、词语）的潜在特征。
 
-### **Python求****$U、D、V^T$** **:** 
+### **Python求****$U、D、V^T$**
 
 ```python
 U, D, V^T = np.linalg.svd(A)
