@@ -1,6 +1,12 @@
 ---
 title: Latex在线编辑工具Overleaf使用手册
 date: '2025-04-08 13:37:39'
+categories:
+  - 知识管理
+tags:
+  - Latex
+  - Overleaf
+  - 论文写作工具
 updated: '2025-04-09 23:38:16'
 permalink: /post/latex-online-editing-tool-overleaf-user-manual-dqnk.html
 comments: true
