@@ -1,6 +1,12 @@
 ---
 title: 潘勇师兄投资策略分享（4月9日）
 date: '2025-04-09 22:42:26'
+categories:
+  - 投资策略
+tags:
+  - 价值投资
+  - 技术分析
+  - 量化交易
 updated: '2025-04-09 22:43:24'
 permalink: >-
   /post/senior-brother-pan-yong-s-investment-strategy-sharing-april-9-2bnfml.html
