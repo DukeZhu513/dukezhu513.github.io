@@ -90,7 +90,7 @@ $$
 其中，如果存在$k$个分区，$P（A）$可以明确的以总概率形式写出：
 
 $$
-P(A_i|B)=\frac{{P(B|A_i)P(A_i)}}{\sum_{i=0}{P(B|A_i)P(A_i)}}
+P(A_i|B)=\frac{P(B|A_i)P(A_i)}{\sum_{i=0}{P(B|A_i)P(A_i)}}
 $$
 
 其中：
