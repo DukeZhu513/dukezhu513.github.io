@@ -1,6 +1,12 @@
 ---
-title: 未命名
+title: 周学习总结（4月6日-12日）
 date: '2025-04-15 15:24:33'
+categories:
+  - 学习笔记
+tags:
+  - 概率论
+  - C++
+  - 拓扑数据分析
 updated: '2025-04-15 15:24:45'
 permalink: /post/unnamed-z1cpnhf.html
 comments: true
@@ -9,7 +15,7 @@ toc: true
 
 
 
-# 未命名
+# 周学习总结（4月6日-12日）
 
 ## 一、拓扑数据分析：持续同调
 
