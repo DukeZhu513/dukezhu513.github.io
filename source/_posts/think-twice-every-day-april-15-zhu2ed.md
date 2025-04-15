@@ -1,6 +1,11 @@
 ---
 title: 每日三思（4月15日）
 date: '2025-04-15 17:55:40'
+categories:
+  - 每日总结
+tags:
+  - 概率论
+  - C++
 updated: '2025-04-16 01:23:30'
 permalink: /post/think-twice-every-day-april-15-zhu2ed.html
 comments: true
