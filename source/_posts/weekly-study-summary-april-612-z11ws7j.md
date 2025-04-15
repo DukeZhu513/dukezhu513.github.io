@@ -88,17 +88,7 @@ void NextDay(int& year, int& month, int& day) {
 ### 贝叶斯定律
 
 贝叶斯定律是描述条件概率关系的公式。它的基本公式是：
-
-{% raw %}
-P(A|B)=\frac{P(B|A)P(A)}{P(B)}
-{% endraw %}
-
 其中，如果存在$k$个分区，$P（A）$可以明确的以总概率形式写出：
-
-{% raw %}
-P(A_i∣B)=\frac{{P(B∣A_i)P(A_i)}}{\sum_{i=0}{P(B∣A_i)P(A_i)}}
-{% endraw %}
-
 其中：
 * $P(A|B)$ 是在已知事件B发生的情况下，事件A发生的概率（后验概率）。
 * $P(B|A)$ 是在事件A发生的情况下，事件B发生的概率（似然性）。
