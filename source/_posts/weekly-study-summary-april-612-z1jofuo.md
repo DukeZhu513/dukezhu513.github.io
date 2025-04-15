@@ -1,6 +1,12 @@
 ---
 title: 周学习总结（4月6日-12日）
 date: '2025-04-15 15:18:20'
+categories:
+  - 学习笔记
+tags:
+  - 概率论
+  - C++
+  - 拓扑数据分析
 updated: '2025-04-15 15:18:56'
 permalink: /post/weekly-study-summary-april-612-z1jofuo.html
 comments: true
