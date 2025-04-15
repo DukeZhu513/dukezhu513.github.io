@@ -1,6 +1,11 @@
 ---
 title: 每日三思（4月14日）
 date: '2025-04-14 22:39:04'
+categories:
+  - 每日总结
+tags:
+  - 概率论
+  - 拓扑数据分析
 updated: '2025-04-15 07:56:41'
 permalink: /post/think-twice-every-day-april-14-zrvsib.html
 comments: true
