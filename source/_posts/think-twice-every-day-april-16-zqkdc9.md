@@ -1,6 +1,12 @@
 ---
 title: 每日三思（4月16日）
 date: '2025-04-16 23:54:16'
+categories:
+  - 每日总结
+tags:
+  - 数理统计
+  - C++
+  - 数据分析
 updated: '2025-04-17 01:16:14'
 permalink: /post/think-twice-every-day-april-16-zqkdc9.html
 comments: true
