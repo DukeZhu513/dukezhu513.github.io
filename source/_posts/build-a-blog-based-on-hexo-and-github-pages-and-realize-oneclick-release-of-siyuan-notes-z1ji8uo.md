@@ -250,7 +250,6 @@ hexo deploy     # hexo deploy
     * 点击确定之后，会显示  AccessKey ID 和 AccessKey Secret 的信息，两个都**复制**一下
 
       * 注意：AccessKey Secret 信息**只会显示这一次**，请妥善保管
-    * 这里之前漏掉了一步，评论区有朋友提到了，感谢Fix。
     * 在创建完子账户之后，需要给子账户授予OSS权限
     * 鼠标移动到右上角头像处，点击「访问控制」-「用户」-「添加权限」![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-Voizihy-20250318111023-1f4lfoe.png)
     * 选中AliyunOSSFullAccess，然后确定即可![image.png](https://mysynotebook.oss-cn-hongkong.aliyuncs.com/img/network-asset-image-P4oZQOm-20250318111023-xj7cvv5.png)
@@ -280,10 +279,7 @@ hexo deploy     # hexo deploy
       * TLS Verify 保持默认的 Verify
 
     ## 特别要点：在阿里云的控制台选择Bucket，修改Bucket的读写设置至少为公共读
-2. 进行图床配置  
-    请参考此篇文章[思源笔记配合插件实现HEXO文章快速发布 - Shepherd010](https://shepherd010.github.io/post/siyuan-notes-and-plugin-realize-the-rapid-release-of-hexo-articles-za8u7r.html)  
-    ps.插件PicGo图床的设置一定要用PicGo（app），内置的PicGo无法正常使用
-3. 进行常规发布进行测试
+2. 进行常规发布进行测试
 
 ## 八、图床配置
 
