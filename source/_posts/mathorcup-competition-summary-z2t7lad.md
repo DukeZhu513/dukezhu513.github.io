@@ -1,5 +1,5 @@
 ---
-title: MathorCup比赛总结
+title: MathorCup赛后总结
 date: '2025-04-15 17:55:43'
 categories:
   - 每日总结
