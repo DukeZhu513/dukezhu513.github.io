@@ -1,6 +1,11 @@
 ---
 title: MathorCup比赛总结
 date: '2025-04-15 17:55:43'
+categories:
+  - 每日总结
+tags:
+  - 数学建模
+  - Latex
 updated: '2025-04-23 00:56:36'
 permalink: /post/mathorcup-competition-summary-z2t7lad.html
 comments: true
@@ -9,7 +14,7 @@ toc: true
 
 
 
-# MathorCup比赛总结
+# MathorCup赛后总结
 
 ## 问题一：总结一下这次MathorCup比赛，哪些做的好，哪些做的不好？
 
