@@ -1,6 +1,11 @@
 ---
 title: MathorCup赛后总结
 date: '2025-04-23 11:40:23'
+categories:
+  - 比赛总结
+tags:
+  - 数学建模
+  - Latex
 updated: '2025-04-23 12:33:28'
 permalink: /post/mathorcup-s-postmatch-summary-z2wmqwu.html
 comments: true
