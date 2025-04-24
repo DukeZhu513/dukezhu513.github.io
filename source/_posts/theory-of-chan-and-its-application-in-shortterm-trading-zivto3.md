@@ -1,6 +1,12 @@
 ---
 title: 缠论及其在短线交易中的应用
 date: '2025-04-25 00:06:36'
+categories:
+  - 投资策略
+tags:
+  - 缠论
+  - 技术分析
+  - 量化交易
 updated: '2025-04-25 01:11:42'
 permalink: /post/theory-of-chan-and-its-application-in-shortterm-trading-zivto3.html
 comments: true
