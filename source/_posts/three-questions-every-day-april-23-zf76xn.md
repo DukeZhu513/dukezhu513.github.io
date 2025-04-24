@@ -1,6 +1,11 @@
 ---
-title: 每日三问（4月23日）
+title: 每日三思（4月23日）
 date: '2025-04-23 23:20:35'
+categories:
+  - 每日总结
+tags:
+  - C++
+  - 数理统计
 updated: '2025-04-24 13:46:44'
 permalink: /post/three-questions-every-day-april-23-zf76xn.html
 comments: true
