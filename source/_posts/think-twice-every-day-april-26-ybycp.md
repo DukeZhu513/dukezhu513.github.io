@@ -1,6 +1,10 @@
 ---
 title: 每日三思（4月26日）
 date: '2025-04-27 00:25:10'
+categories:
+  - 每日总结
+tags:
+  - 数理统计
 updated: '2025-04-27 01:02:49'
 permalink: /post/think-twice-every-day-april-26-ybycp.html
 comments: true
