@@ -1,6 +1,11 @@
 ---
 title: 每日三思（4月27日）
 date: '2025-04-27 22:22:26'
+categories:
+  - 每日总结
+tags:
+  - 数理统计
+  - C++
 updated: '2025-04-28 00:49:53'
 permalink: /post/think-twice-every-day-april-27-z1xvyvw.html
 comments: true
