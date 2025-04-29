@@ -1,6 +1,10 @@
 ---
 title: 每日三思（4月29日）
 date: '2025-04-30 00:06:03'
+categories:
+  - 每日总结
+tags:
+  - 机器学习
 updated: '2025-04-30 01:00:47'
 permalink: /post/think-twice-every-day-april-29-z1lajh5.html
 comments: true
