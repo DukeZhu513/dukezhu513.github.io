@@ -1,6 +1,10 @@
 ---
 title: 每日三思（5月7日）
 date: '2025-05-07 23:27:57'
+categories:
+  - 每日总结
+tags:
+  - 机器学习
 updated: '2025-05-08 07:47:06'
 permalink: /post/think-twice-every-day-may-7-21yhop.html
 comments: true
