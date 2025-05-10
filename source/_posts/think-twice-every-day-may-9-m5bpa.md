@@ -1,6 +1,10 @@
 ---
 title: 每日三思（5月9日）
 date: '2025-05-09 23:17:49'
+categories:
+  - 每日总结
+tags:
+  - C++
 updated: '2025-05-10 13:12:31'
 permalink: /post/think-twice-every-day-may-9-m5bpa.html
 comments: true
