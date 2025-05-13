@@ -1,6 +1,12 @@
 ---
 title: 周总结（5月4日-5月11日）
 date: '2025-05-12 07:30:07'
+categories:
+  - 学习笔记
+tags:
+  - 机器学习
+  - C++
+  - 拓扑
 updated: '2025-05-13 00:21:18'
 permalink: /post/weekly-summary-may-4may-11-z1xqtn2.html
 comments: true
