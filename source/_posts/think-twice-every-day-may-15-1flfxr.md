@@ -1,6 +1,11 @@
 ---
 title: 每日三思（5月15日）
 date: '2025-05-16 08:39:38'
+categories:
+  - 每日总结
+tags:
+  - AI
+  - 机器学习  
 updated: '2025-05-16 09:41:16'
 permalink: /post/think-twice-every-day-may-15-1flfxr.html
 comments: true

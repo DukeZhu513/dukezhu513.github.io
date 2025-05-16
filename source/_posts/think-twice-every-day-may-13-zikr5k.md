@@ -1,6 +1,11 @@
 ---
 title: 每日三思（5月13日）
 date: '2025-05-13 23:21:27'
+categories:
+  - 每日总结
+tags:
+  - C++
+  - 机器学习  
 updated: '2025-05-14 00:23:48'
 permalink: /post/think-twice-every-day-may-13-zikr5k.html
 comments: true
