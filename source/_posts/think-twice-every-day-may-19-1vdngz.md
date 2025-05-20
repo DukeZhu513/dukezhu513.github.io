@@ -1,6 +1,10 @@
 ---
 title: 每日三思（5月19日）
 date: '2025-05-20 10:15:32'
+categories:
+  - 每日总结
+tags:
+  - 机器学习  
 updated: '2025-05-20 11:50:08'
 permalink: /post/think-twice-every-day-may-19-1vdngz.html
 comments: true
