@@ -1,6 +1,10 @@
 ---
 title: 每日三思（5月20日）
 date: '2025-05-20 23:21:01'
+categories:
+  - 每日总结
+tags:
+  - 机器学习  
 updated: '2025-05-21 00:18:09'
 permalink: /post/think-twice-every-day-may-20-pacri.html
 comments: true
