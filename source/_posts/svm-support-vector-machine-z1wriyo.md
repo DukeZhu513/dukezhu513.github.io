@@ -1,6 +1,10 @@
 ---
 title: SVM（Support Vector Machine）
 date: '2025-05-17 23:31:39'
+categories:
+  - 每日总结
+tags:
+  - 机器学习  
 updated: '2025-05-23 09:51:27'
 permalink: /post/svm-support-vector-machine-z1wriyo.html
 comments: true
