@@ -1,5 +1,5 @@
 ---
-title: Gradient Descent
+title: Gradient Descent(梯度下降)
 date: '2025-05-23 20:44:54'
 categories:
   - 每日总结

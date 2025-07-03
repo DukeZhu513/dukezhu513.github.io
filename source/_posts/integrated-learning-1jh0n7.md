@@ -1,6 +1,10 @@
 ---
 title: 集成学习
 date: '2025-06-09 07:18:42'
+categories:
+  - 每日总结
+tags:
+  - 机器学习  
 updated: '2025-06-09 07:52:25'
 permalink: /post/integrated-learning-1jh0n7.html
 comments: true
