@@ -1,6 +1,10 @@
 ---
 title: 聚类
 date: '2025-07-03 23:01:37'
+categories:
+  - 每日总结
+tags:
+  - 机器学习
 updated: '2025-07-04 07:33:01'
 permalink: /post/clustering-uakhb.html
 comments: true
