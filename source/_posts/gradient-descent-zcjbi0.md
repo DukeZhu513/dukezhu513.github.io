@@ -2,7 +2,7 @@
 title: Gradient Descent(梯度下降)
 date: '2025-05-23 20:44:54'
 categories:
-  - 每日总结
+  - 学习笔记
 tags:
   - 机器学习  
 updated: '2025-05-23 23:47:44'

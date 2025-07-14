@@ -2,7 +2,7 @@
 title: SVM（Support Vector Machine）
 date: '2025-05-17 23:31:39'
 categories:
-  - 每日总结
+  - 学习笔记
 tags:
   - 机器学习  
 updated: '2025-05-23 09:51:27'
