@@ -1,6 +1,10 @@
 ---
 title: 第六章：递归与分治
 date: '2025-07-18 23:42:36'
+categories:
+  - 算法学习
+tags:
+  - C++
 updated: '2025-07-19 00:11:49'
 permalink: /post/chapter-6-recursion-and-dividing-2dwy0l.html
 comments: true
