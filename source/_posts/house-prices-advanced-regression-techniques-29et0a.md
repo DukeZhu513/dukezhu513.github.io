@@ -2,6 +2,11 @@
 title: House Prices - Advanced Regression Techniques
 date: '2025-08-07 03:22:18'
 updated: '2025-08-07 04:04:03'
+categories:
+  - 学习笔记
+tags:
+  - Kaggle
+  - 数据分析
 permalink: /post/house-prices-advanced-regression-techniques-29et0a.html
 comments: true
 toc: true
