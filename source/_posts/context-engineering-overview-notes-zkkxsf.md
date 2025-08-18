@@ -1,6 +1,11 @@
 ---
 title: 上下文工程综述笔记
 date: '2025-08-18 11:48:48'
+categories:
+  - 综述库
+tags:
+  - LLM
+    - 上下文工程  
 updated: '2025-08-18 11:49:14'
 permalink: /post/context-engineering-overview-notes-zkkxsf.html
 comments: true
