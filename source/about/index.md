@@ -50,11 +50,6 @@ layout: about
 我正在路上。
 
 
-## 🔗 联系方式
-
-[![GitHub](https://img.shields.io/badge/GitHub-DukeZhu513-181717?style=flat&logo=github)](https://github.com/DukeZhu513) [![掘金](https://img.shields.io/badge/掘金-Duke-007FFF?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGQ9Ik01MTIgNjRsMTkyIDUxMi0xOTIgMzg0LTE5Mi0zODR6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)](https://juejin.cn/user/3308889482201402) [![Email](https://img.shields.io/badge/Email-duke--zhu@outlook.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:duke-zhu@outlook.com)
-
-
 ## � 项目推荐
 
 🌟 **[literature-reviews](https://github.com/DukeZhu513/literature-reviews)** — 我的综述库
