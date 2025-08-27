@@ -6,8 +6,8 @@ layout: about
 
 ## 👤 关于我
 
-> "The best way to predict the future is to invent it."  
-> — Alan Kay
+> "Stay hungry, stay foolish."  
+> — Steve Jobs
 
 我是 **Duke**，广东金融学院金融学专业24级本科生，正以AI 为核心工具，探索从传统金融走向智能决策系统的可能性。
 
@@ -39,7 +39,7 @@ layout: about
 从 ESP32 到 ROS2，了解 AI 如何与物理世界交互
 
 
-## � 关于这个博客
+## 📜 关于这个博客
 
 这里是我的**学习日志**，也是我的**思考实验场**。
 
@@ -50,7 +50,7 @@ layout: about
 我正在路上。
 
 
-## � 项目推荐
+## 📁 项目推荐
 
 🌟 **[literature-reviews](https://github.com/DukeZhu513/literature-reviews)** — 我的综述库
 

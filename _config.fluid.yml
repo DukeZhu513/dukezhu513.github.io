@@ -634,7 +634,7 @@ post:
 
     # 开启后，只有在文章 Front-matter 里指定 `category_bar: true` 才会展示分类，也可以通过 `category_bar: ["分类A"]` 来指定分类
     # If true, only set `category_bar: true` in Front-matter will enable sidebar of category, also set `category_bar: ["CategoryA"]` to specify categories
-    specific: true
+    specific: false
 
     # 置于板块的左侧或右侧
     # place in the board
@@ -648,6 +648,7 @@ post:
 
     # 单个分类中折叠展示文章数的最大值，超过限制会显示 More，0 则不限制
     # The maximum number of posts in a single category. If the limit is exceeded, it will be displayed More. If 0 no limit
+    post_limit: 0
     post_limit: 0
 
   # 侧边栏展示文章目录
@@ -983,7 +984,7 @@ about:
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /images/LeClaire.jpg
-  name: ""
+  name: "Duke"
   intro: ""
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, the icon is no longer a link, but a hovering QR code
