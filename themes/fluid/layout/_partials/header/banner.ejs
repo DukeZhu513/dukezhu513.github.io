@@ -1,12 +1,12 @@
 <%
-var banner_img = page.banner_img || theme.index.banner_img
+var banner_img = page.banner_img || theme.index.banner_img;
 var banner_img_height = parseFloat(page.banner_img_height || theme.index.banner_img_height)
 var banner_mask_alpha = parseFloat(page.banner_mask_alpha || theme.index.banner_mask_alpha)
 var subtitle = page.subtitle || page.title
 %>
 
 <div id="banner" class="banner" <%- theme.banner && theme.banner.parallax && 'parallax=true' %>
-     style="background: url('<%- url_for(banner_img) %>') no-repeat center center; background-size: cover; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
+     style="background: url('<%- url_for(banner_img) %>') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <% if(is_home()) { %>
       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; opacity: 0.8;" id="bubbles"></div>
