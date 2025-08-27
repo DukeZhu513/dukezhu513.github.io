@@ -23,11 +23,11 @@ loading:
 
 # 用于浏览器标签的图标
 # Icon for browser tab
-favicon: /images/Djokovic.jpg
+favicon: /images/LeClaire.jpg
 
 # 用于苹果设备的图标
 # Icon for Apple touch
-apple_touch_icon: /images/Djokovic.jpg
+apple_touch_icon: /images/LeClaire.jpg
 
 # 浏览器标签页中的标题分隔符，效果：文章名 - 站点名
 # Title separator in browser tab, eg: article - site
@@ -96,7 +96,7 @@ fun_features:
 
     # 游标字符
     # Cursor character
-    cursorChar: "_"
+    cursorChar: "⭐"
 
     # 是否循环播放效果
     # If true, loop animation
@@ -378,9 +378,14 @@ navbar:
   # Navigation bar menu. `key` is used to associate languages/*.yml. If there is no association, the value of `key` itself will be displayed; if `icon` is a css class, it can be omitted; adding `name` can force the display of the specified name
   menu:
     - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
-    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
-    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
-    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: '文章',
+      icon: 'iconfont icon-books',
+      submenu: [
+        { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" },
+        { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" },
+        { key: "tag", link: "/tags/", icon: "iconfont icon-tag" }
+      ]
+    }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
