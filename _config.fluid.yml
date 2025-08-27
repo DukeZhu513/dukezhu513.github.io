@@ -244,6 +244,7 @@ custom_js:
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
 custom_css:
+  - /css/image-quality.css
 
 # 网页访问统计
 # Analysis of website visitors
@@ -383,7 +384,7 @@ navbar:
       submenu: [
         { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" },
         { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" },
-        { key: "tag", link: "/tags/", icon: "iconfont icon-tag" }
+        { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
       ]
     }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
