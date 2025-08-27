@@ -10,6 +10,11 @@
 # You can get more detailed help from the guide
 #---------------------------
 
+# 加载动画
+loading:
+  enable: true
+  # 动画时长，从动画开始播放计算，不包含页面加载时间，单位ms
+  play_time: 500
 
 #---------------------------
 # 全局
