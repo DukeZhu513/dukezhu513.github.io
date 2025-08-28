@@ -1,108 +1,91 @@
-// source/js/stars.js
-(function () {
-  const stars = [];
-  const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d');
+// stars.js - 鼠标移动彩色星星特效（加速版）
+(function() {
+  let lastTime = 0;
+  const throttleDelay = 20; // 降低延迟，提高响应速度
   
-  // 设置 canvas 样式
-  canvas.style.position = 'fixed';
-  canvas.style.top = '0';
-  canvas.style.left = '0';
-  canvas.style.zIndex = '-1';
-  canvas.style.pointerEvents = 'none';
-  canvas.style.opacity = '0.7';
-  
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  document.body.appendChild(canvas);
-
-  // 创建星星
-  for (let i = 0; i < 80; i++) {
-    stars.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      size: Math.random() * 2 + 1,
-      speed: Math.random() * 0.5 + 0.1,
-      opacity: Math.random() * 0.5 + 0.3,
-      color: `hsl(${Math.random() * 60 + 200}, 70%, 80%)` // 蓝紫色调
-    });
-  }
-
-  // 鼠标位置
-  let mouseX = canvas.width / 2;
-  let mouseY = canvas.height / 2;
-
-  // 鼠标移动事件
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+  // 创建星星元素
+  function createStar(x, y) {
+    const star = document.createElement('span');
+    star.innerHTML = '*';
+    star.style.position = 'fixed';
+    star.style.left = x + (Math.random() - 0.5) * 15 + 'px'; // 添加随机偏移
+    star.style.top = y + (Math.random() - 0.5) * 15 + 'px';
+    star.style.color = getRandomColor();
+    star.style.fontSize = Math.random() * 16 + 12 + 'px';
+    star.style.pointerEvents = 'none';
+    star.style.zIndex = '9999';
+    star.style.transition = 'opacity 1.2s ease-out, transform 1.2s ease-out'; // 缩短动画时间
+    star.style.userSelect = 'none';
+    star.style.textShadow = '0 0 6px currentColor'; // 添加发光效果
     
-    // 在鼠标位置附近添加新的星星
-    if (Math.random() < 0.3) {
-      stars.push({
-        x: mouseX + (Math.random() - 0.5) * 20,
-        y: mouseY + (Math.random() - 0.5) * 20,
-        size: Math.random() * 3 + 1,
-        speed: Math.random() * 0.8 + 0.2,
-        opacity: 0.8,
-        color: `hsl(${Math.random() * 60 + 200}, 70%, 80%)`
-      });
-    }
-  });
-
-  // 窗口大小改变时重新设置 canvas
-  window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  });
-
-  // 动画循环
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.globalCompositeOperation = 'lighter';
-
-    // 更新星星位置
-    for (let i = stars.length - 1; i >= 0; i--) {
-      const star = stars[i];
-      
-      // 星星向鼠标位置移动（轻微吸引效果）
-      const dx = mouseX - star.x;
-      const dy = mouseY - star.y;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-      
-      if (distance < 100) {
-        star.x += dx * 0.02;
-        star.y += dy * 0.02;
+    // 添加到页面
+    document.body.appendChild(star);
+    
+    // 动画效果
+    setTimeout(() => {
+      star.style.opacity = '0';
+      star.style.transform = 'translateY(-40px) scale(0)'; // 更快的上升效果
+    }, 30);
+    
+    // 1.2秒后移除元素
+    setTimeout(() => {
+      if (star.parentNode) {
+        star.parentNode.removeChild(star);
       }
-      
-      // 星星逐渐淡出
-      star.opacity -= 0.008;
-      
-      // 移除完全透明的星星
-      if (star.opacity <= 0) {
-        stars.splice(i, 1);
-        continue;
-      }
-      
-      // 绘制星星
-      ctx.save();
-      ctx.globalAlpha = star.opacity;
-      ctx.fillStyle = star.color;
-      ctx.shadowBlur = 10;
-      ctx.shadowColor = star.color;
-      ctx.beginPath();
-      ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.restore();
-    }
-
-    requestAnimationFrame(animate);
+    }, 1200);
+    
+    return star;
   }
-
-  // 页面加载完成后开始动画
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', animate);
-  } else {
-    animate();
+  
+  // 随机颜色
+  function getRandomColor() {
+    const colors = [
+      '#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', 
+      '#feca57', '#ff9ff3', '#54a0ff', '#5f27cd',
+      '#00d2d3', '#ff9f43', '#10ac84', '#ee5a6f',
+      '#ffeaa7', '#dda0dd', '#98d8c8', '#f7dc6f' // 增加更多颜色
+    ];
+    return colors[Math.floor(Math.random() * colors.length)];
+  }
+  
+  // 鼠标移动事件（节流优化）
+  function handleMouseMove(e) {
+    const currentTime = Date.now();
+    if (currentTime - lastTime < throttleDelay) return;
+    lastTime = currentTime;
+    
+    // 大幅提高星星生成频率
+    if (Math.random() > 0.3) { // 70%概率生成（原来30%）
+      createStar(e.clientX, e.clientY);
+    }
+  }
+  
+  // 触摸事件（移动端）
+  function handleTouchMove(e) {
+    const currentTime = Date.now();
+    if (currentTime - lastTime < throttleDelay) return;
+    lastTime = currentTime;
+    
+    if (e.touches.length > 0) {
+      const touch = e.touches[0];
+      if (Math.random() > 0.4) { // 60%概率生成
+        createStar(touch.clientX, touch.clientY);
+      }
+    }
+  }
+  
+  // 页面加载完成后绑定事件
+  document.addEventListener('DOMContentLoaded', function() {
+    // PC端鼠标事件
+    document.addEventListener('mousemove', handleMouseMove);
+    
+    // 移动端触摸事件
+    document.addEventListener('touchmove', handleTouchMove, { passive: true });
+  });
+  
+  // 如果页面已经加载完成，直接绑定事件
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('touchmove', handleTouchMove, { passive: true });
   }
 })();

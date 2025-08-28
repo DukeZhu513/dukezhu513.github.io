@@ -1,4 +1,29 @@
 <div class="footer-inner">
+  <!-- 网站运行时间（一行显示） -->
+  <div style="text-align: center; margin: 10px 0;">
+    <span id="runtime" style="font-size: 14px; color: #666; display: inline-block; font-weight: 500; letter-spacing: 0.5px;">正在加载运行时间...</span>
+    <script>
+      const startTime = new Date("2025-03-18T15:37:43"); // 第一篇文章发布时间
+      
+      function updateTime() {
+        const now = new Date();
+        const diffMs = now - startTime;
+
+        const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
+
+        const pad = (num) => num.toString().padStart(2, '0');
+
+        document.getElementById('runtime').innerHTML = `本站🚀已启航 ${days} 天 ${pad(hours)} 时 ${pad(minutes)} 分 ${pad(seconds)} 秒`;
+      }
+
+      updateTime(); // 立即执行一次
+      setInterval(updateTime, 1000); // 每秒更新
+    </script>
+  </div>
+
   <% if (theme.footer.content) { %>
     <div class="footer-content">
       <%- theme.footer.content %>
