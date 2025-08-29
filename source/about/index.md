@@ -30,7 +30,7 @@ layout: about
 
 ## 📝 推荐项目
 
-🌟 **[literature-reviews](https://github.com/DukeZhu513/literature-reviews)**
+🌟 **[Literature Review Repository](https://github.com/DukeZhu513/literature-reviews)**
 
 > 我的综述库，不是“我读过”，而是“我试图理解过”  
 > 结构化整理 + 手动提炼 = 为长期记忆打下 Checkpoint
