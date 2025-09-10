@@ -1,6 +1,10 @@
 ---
 title: 国赛反思
 date: '2025-09-09 23:35:12'
+categories:
+  - 每日总结
+tags:
+    - 数学建模
 updated: '2025-09-10 12:59:53'
 permalink: /post/reflection-on-the-national-competition-wpgyl.html
 comments: true

@@ -1,6 +1,10 @@
 ---
 title: 第七章：树形数据结构（上）
 date: '2025-09-10 17:23:18'
+categories:
+  - 算法学习
+tags:
+  - C++
 updated: '2025-09-11 00:40:57'
 permalink: /post/chapter-7-tree-data-structure-part-1-1ldk3f.html
 comments: true
