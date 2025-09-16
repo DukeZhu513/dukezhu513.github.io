@@ -1,6 +1,10 @@
 ---
 title: 计算机组成原理：计算机的运算方法
 date: '2025-09-16 16:35:47'
+categories:
+  - 408
+tags:
+  - 计算机组成原理
 updated: '2025-09-16 22:43:27'
 permalink: /post/computer-composition-principle-computer-operation-method-z2qyamb.html
 comments: true
