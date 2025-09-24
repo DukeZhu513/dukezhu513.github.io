@@ -1,6 +1,10 @@
 ---
 title: 计算机组成原理：CPU的结构与功能
 date: '2025-09-24 08:37:02'
+categories:
+  - 408
+tags:
+  - 计算机组成原理
 updated: '2025-09-24 21:13:06'
 permalink: /post/ji-suan-ji-zu-cheng-yuan-li-cpude-jie-gou-yu-gong-neng-13jar3.html
 comments: true
