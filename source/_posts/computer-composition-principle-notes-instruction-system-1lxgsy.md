@@ -1,6 +1,10 @@
 ---
-title: 计算机组成原理笔记：指令系统
+title: 计算机组成原理：指令系统
 date: '2025-09-02 21:39:12'
+categories:
+  - 408
+tags:
+  - 计算机组成原理
 updated: '2025-09-24 00:49:15'
 permalink: /post/computer-composition-principle-notes-instruction-system-1lxgsy.html
 comments: true
