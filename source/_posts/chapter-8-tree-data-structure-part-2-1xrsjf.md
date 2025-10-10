@@ -1,6 +1,10 @@
 ---
 title: 第八章：树形数据结构（下）
 date: '2025-10-09 20:01:30'
+categories:
+  - 算法学习
+tags:
+  - C++
 updated: '2025-10-10 22:22:31'
 permalink: /post/chapter-8-tree-data-structure-part-2-1xrsjf.html
 comments: true
