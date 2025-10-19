@@ -1,6 +1,11 @@
 ---
 title: 神经网络基础：从感知机到反向传播
 date: '2025-10-18 01:05:55'
+categories:
+  - 学习笔记
+tags:
+  - 机器学习
+  - 深度学习
 updated: '2025-10-20 00:58:23'
 permalink: /post/neural-network-basics-from-perceptron-to-backpropagation-uwhtw.html
 comments: true
